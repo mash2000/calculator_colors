@@ -11,29 +11,29 @@
 		<div class="padCalc">
 			<h1 class="t1">Калькулятор</h1>
 			<div class="bl len">
-				<p class="val">{{ value }}</p>
+				<p class="val">{{ value }} (м)</p>
 				<div class="fields">
-					<span>1</span><input type="range" min="1" max="100" id="v1" step="1" v-model="answ"><span>100</span>
+					<span>0.1</span><input type="range" min="0.1" max="10" class="rves" id="v1" step="0.01" v-model="answ"><span>10</span>
 					<input type="text" id="answ" v-model="answ">
 				</div>
 			</div>
 			<div class="bl wid">
-				<p class="val">{{ value }}</p>
+				<p class="val">{{ value }} (м)</p>
 				<div class="fields">
-					<span>1</span><input type="range" min="1" max="100" id="v1" step="1" v-model="answ"><span>100</span>
+					<span>0.1</span><input type="range" min="1" max="10" class="rves" id="v2" step="0.1" v-model="answ"><span>10</span>
 					<input type="text" id="answ" v-model="answ">
 				</div>
 			</div>
 			<div class="bl height">
-				<p class="val">{{ value }}</p>
+				<p class="val">{{ value }} (м)</p>
 				<div class="fields">
-					<span>1</span><input type="range" min="1" max="100" id="v1" step="1" v-model="answ"><span>100</span>
+					<span>0.1</span><input type="range" min="0.1" max="10" class="rves" id="v3" step="0.01" v-model="answ"><span>10</span>
 					<input type="text" id="answ" v-model="answ">
 				</div>
 			</div>
 			<div class="bl btn">
-				<h4>Результат</h3>
-				<p class="result">Вам потребуется</p>
+				<h4 class="resu">Результат</h3>
+				<span class="result"></span>
 			</div>
 		</div>
 	</div>

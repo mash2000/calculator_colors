@@ -1,0 +1,27 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 4512c61..d2bb497 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -33,7 +33,7 @@[m
+ 			</div>[m
+ 			<div class="bl btn">[m
+ 				<h4>Результат</h3>[m
+[31m-				<p class="result">Вам потребуется</p>[m
+[32m+[m				[32m<p class="result">Вам потребуется {{ getResult }} </p>[m
+ 			</div>[m
+ 		</div>[m
+ 	</div>[m
+[1mdiff --git a/vue/app.js b/vue/app.js[m
+[1mindex 5fe4c12..26426f6 100644[m
+[1m--- a/vue/app.js[m
+[1m+++ b/vue/app.js[m
+[36m@@ -32,7 +32,7 @@[m [mconst btn = new Vue({[m
+ 	},[m
+ 	computed: {[m
+ 		getResult: function() {[m
+[31m-			[m
+[32m+[m			[32mreturn 10[m
+ 		}[m
+ 	}[m
+ });[m
+\ No newline at end of file[m

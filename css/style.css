@@ -16,7 +16,9 @@ body {
 	transform: translate(-50%, -50%);
 	width: 350px;
 	height: 310px;
-	background: #fff;
+	background: #159957;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	border-radius: 20px;
 	padding: 15px;
 }
@@ -26,11 +28,13 @@ body {
 	height: 100%;
 	border-radius: 10px;
 	border: 5px solid #1e1e1e;
+	background-color: #fff;
 }
 
 .t1 {
 	font-size: 20px;
 	text-align: center;
+	color: #159957;
 }
 
 .bl {
@@ -63,4 +67,8 @@ body {
 
 .result {
 	line-height: 35px;
+}
+
+.resu {
+	color: #155799;
 }
