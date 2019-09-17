@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Калькулятор</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div class="karkas">
+		<div class="padCalc">
+			<h1 class="t1">Калькулятор</h1>
+			<div class="bl len">
+				<p class="val">{{ value }}</p>
+				<div class="fields">
+					<span>1</span><input type="range" min="1" max="100" id="v1" step="1" v-model="answ"><span>100</span>
+					<input type="text" id="answ" v-model="answ">
+				</div>
+			</div>
+			<div class="bl wid">
+				<p class="val">{{ value }}</p>
+				<div class="fields">
+					<span>1</span><input type="range" min="1" max="100" id="v1" step="1" v-model="answ"><span>100</span>
+					<input type="text" id="answ" v-model="answ">
+				</div>
+			</div>
+			<div class="bl height">
+				<p class="val">{{ value }}</p>
+				<div class="fields">
+					<span>1</span><input type="range" min="1" max="100" id="v1" step="1" v-model="answ"><span>100</span>
+					<input type="text" id="answ" v-model="answ">
+				</div>
+			</div>
+			<div class="bl btn">
+				<h4>Результат</h3>
+				<p class="result">Вам потребуется</p>
+			</div>
+		</div>
+	</div>
+	<script src="vue/app.js"></script>
+	<script src="js/script.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

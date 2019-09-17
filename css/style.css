@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Arial", sans-serif;
+}
+
+body {
+	background-color: #1e1e1e;
+}
+
+.karkas {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 310px;
+	background: #fff;
+	border-radius: 20px;
+	padding: 15px;
+}
+
+.padCalc {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	border: 5px solid #1e1e1e;
+}
+
+.t1 {
+	font-size: 20px;
+	text-align: center;
+}
+
+.bl {
+	width: 100%;
+	padding: 5px 10px;
+}
+
+.val {
+	text-align: center;
+}
+
+.fields {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+#answ {
+	width: 40px;
+	text-align:center;
+}
+
+.btn {
+	
+}
+
+.btn h4 {
+	text-align: center;
+}
+
+.result {
+	line-height: 35px;
+}
